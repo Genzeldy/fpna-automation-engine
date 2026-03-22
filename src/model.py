@@ -53,3 +53,22 @@ def forecast_next_periods(df, periods=3):
 forecast_df = forecast_next_periods(df)
 
 print(forecast_df)
+
+# --- Insight Generation ---
+
+def generate_insights(df):
+    latest = df.iloc[-1]
+    insights = []
+
+    if latest['Profit Margin'] < 0.2:
+        insights.append("Profit margin below 20% - potential cost pressure")
+
+    if latest['Marketing'] / latest['Revenue'] > 0.3:
+        insights.append("High marketing spend relative to revenue")
+
+    if latest['Revenue Growth %'] < 0.02:
+        insights.append("Revenue growth slowing down")
+
+    return insights
+
+print(generate_insights(df))
