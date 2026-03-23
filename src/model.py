@@ -60,14 +60,28 @@ def generate_insights(df):
     latest = df.iloc[-1]
     insights = []
 
-    if latest['Profit Margin'] < 0.2:
-        insights.append("Profit margin below 20% - potential cost pressure")
+    profit_margin = latest['Profit Margin']
+    marketing_ratio = latest['Marketing'] / latest['Revenue']
+    growth = latest['Revenue Growth %']
 
-    if latest['Marketing'] / latest['Revenue'] > 0.3:
-        insights.append("High marketing spend relative to revenue")
+    # Profitability insight
+    if profit_margin < 0.2:
+        insights.append("⚠️ Profit margin below 20% - cost pressure detected")
+    else:
+        insights.append("✅ Profitability is healthy")
 
-    if latest['Revenue Growth %'] < 0.02:
-        insights.append("Revenue growth slowing down")
+    # Marketing efficiency
+    if marketing_ratio > 0.3:
+        insights.append("⚠️ Marketing spend is high relative to revenue")
+    else:
+        insights.append("✅ Marketing spend is within reasonable range")
+
+    # Growth insight
+    if pd.notna(growth):
+        if growth < 0.02:
+            insights.append("⚠️ Revenue growth is slowing")
+        else:
+            insights.append("✅ Revenue growth is stable")
 
     return insights
 
