@@ -1,42 +1,65 @@
 # FP&A Automation Engine
 
 ## 🚀 Overview
+This project demonstrates how financial planning and analysis (FP&A) workflows can be automated using data and Python.
 
-This project demonstrates how Financial Planning & Analysis (FP&A) workflows can be automated using data and simple modeling techniques.
-
-It simulates a real-world financial environment where raw financial data is transformed into structured outputs such as:
-- Profitability analysis  
-- Forecasting  
-- Automated insights  
+It transforms raw financial data into:
+- Profitability analysis
+- Forecasting
+- Automated insights
 
 ---
 
 ## 🎯 Objectives
-
-- Automate core FP&A processes (actuals, forecasting, analysis)  
-- Reduce manual financial modeling work  
-- Build scalable and repeatable financial logic  
-- Lay the foundation for AI-driven financial decision support  
+- Automate financial modeling workflows
+- Reduce manual FP&A processes
+- Build scalable financial logic
+- Introduce intelligent insight generation
 
 ---
 
 ## 🧱 Project Structure
-
 data/        → raw financial data  
-src/         → core financial logic (Python)  
+src/         → financial model logic  
 notebooks/   → analysis and visualization  
-
 
 ---
 
 ## ⚙️ Tech Stack
-
-- Python (pandas)  
-- Excel / Google Sheets  
-- Jupyter Notebook  
+- Python (pandas)
+- Excel / Google Sheets
+- Jupyter Notebook
 
 ---
 
-## 📈 Status
+## 📊 Key Features
+- Automated profit and margin calculations  
+- Forecasting engine based on growth assumptions  
+- Insight generation based on financial rules  
+- Visual analysis of financial performance  
 
-🚧 **In Progress** — building core financial model and forecasting engine
+---
+
+## 📈 Example Outputs
+- Identification of cost pressure from declining margins  
+- Detection of high marketing spend ratios  
+- Revenue growth trend analysis  
+
+---
+
+## 🔍 Visual Analysis
+
+The project includes visualizations such as:
+
+- Revenue vs Cost trends  
+- Profit margin evolution  
+- Forecasted financial performance  
+
+(See notebook: notebooks/analysis.ipynb)
+
+---
+
+## 🔜 Next Steps
+- Integrate real financial data sources (APIs)
+- Add AI-generated financial commentary
+- Build an interactive dashboard
