@@ -63,3 +63,18 @@ The project includes visualizations such as:
 - Integrate real financial data sources (APIs)
 - Add AI-generated financial commentary
 - Build an interactive dashboard
+
+## 🎥 Demo
+
+This project can be run as an interactive app using Streamlit:
+
+streamlit run app.py
+
+Users can:
+- Adjust financial assumptions
+- View forecast outputs
+- Generate AI-powered financial insights
+
+  ## 🤖 AI Integration
+
+The project uses OpenAI API to generate financial insights dynamically, simulating an analyst reviewing company performance.
