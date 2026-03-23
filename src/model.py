@@ -86,3 +86,7 @@ def generate_insights(df):
     return insights
 
 print(generate_insights(df))
+
+from ai_insights import generate_ai_insights
+
+print(generate_ai_insights(df))
